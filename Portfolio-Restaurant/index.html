@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One:ital@0;1&family=Bebas+Neue&family=Caveat&family=Cormorant+Garamond:ital,wght@0,300;0,700;1,300&family=Hurricane&family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;1,100;1,200;1,400;1,500;1,600&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Restaurant</title>
+</head>
+<body>
+    <header>
+        <nav class="logo-image">
+        <a href="#home"><h1>la poma</h1></a>
+            <ul>
+                <li> <a href="#whenTitle">Hours</a></li>
+                <li> <a href="#menu">Menu</a></li>
+                <li> <a href="#reservations">Reservations</a></li>
+                <li> <a href="#events">Events & Catering</a></li>
+            </ul>
+        </nav>
+        <div class="logo-img" id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <section>
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            </section>
+            <a href="#home"><h1>la poma</h1></a>
+            <ul class="mobile-menu">
+                <li><a href="#whenTitle">Hours</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reservations">Reservations</a></li>
+                <li> <a href="#events">Events & Catering</a></li>
+            </ul>
+        </div>
+    </header>
+    <section id="sectionOne">
+        <h2>Hours + Location</h2>
+        <h3 id="whereTitle">Where</h3>
+        <section id="where">
+            <p>La Rambla, 117, 08002 Barcelona, Spain</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11974.08981065581!2d2.1705152!3d41.384459!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x25d9ca3ee20ec612!2sLa%20Poma%20Restaurant!5e0!3m2!1sen!2sus!4v1648694546236!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <h3 id="whenTitle">When</h3>
+        <section id="hours">
+            <img src="images/restaurant/pexels-huy-phan-1383776.jpg">
+            <div>
+                <p>Monday - Thursday</p>
+                <span> 9am - 2pm; 5pm-10pm </span>
+                <p>Friday + Saturday</p>
+                <span> 9am - 2pm; 5pm-1am </span>
+                <p>Sunday</p>
+                <span> 9am - 2pm </span>
+            </div>
+        </section>
+    </section>
+    <section id="menu">
+        <h2>Menu</h2>
+        <h3>Breakfast</h3>
+        <span>Served Until 12pm</span>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore nihil, reiciendis eius soluta, doloribus minus veniam voluptas optio omnis quam, quis aliquam incidunt asperiores doloremque aspernatur rem eveniet ut suscipit?</p>
+
+        <h3>Lunch</h3>
+        <span>Served 12pm Until 6pm</span>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore nihil, reiciendis eius soluta, doloribus minus veniam voluptas optio omnis quam, quis aliquam incidunt asperiores doloremque aspernatur rem eveniet ut suscipit?</p>
+
+        <h3>Dinner</h3>
+        <span>Served 6pm Until Close</span>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore nihil, reiciendis eius soluta, doloribus minus veniam voluptas optio omnis quam, quis aliquam incidunt asperiores doloremque aspernatur rem eveniet ut suscipit?</p>
+
+        <h3>Desserts</h3>
+        <span>Served All Day</span>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore nihil, reiciendis eius soluta, doloribus minus veniam voluptas optio omnis quam, quis aliquam incidunt asperiores doloremque aspernatur rem eveniet ut suscipit?</p>
+
+        <h3>Drinks</h3>
+        <span>Served All Day</span>
+            <h3>Non-alcoholic</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore nihil, reiciendis eius soluta, doloribus minus veniam voluptas optio omnis quam, quis aliquam incidunt asperiores doloremque aspernatur rem eveniet ut suscipit?</p>
+            <h3>Wine + Cocktails</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore nihil, reiciendis eius soluta, doloribus minus veniam voluptas optio omnis quam, quis aliquam incidunt asperiores doloremque aspernatur rem eveniet ut suscipit?</p>
+    </section>
+    <section id="reservations">
+        <h2>Call for Reservations</h2>
+        <p>+1(234)123-4567</p>
+    </section>
+    <section id="events">
+        <h2>Let Us Cater Your Event</h2>
+        <form>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name">
+            
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name">
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email address">
+
+            <label for="email">Any Food Allergies?</label>
+            <input type="text" id="contactService" name="service" placeholder="Describe any dietary restrictions">
+
+            <label for="email">When is your event date?</label>
+            <input type="date" id="date" name="date" placeholder="Select Date"></br></br>
+
+            <label for="subject">What did you have in mind for food?</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    <footer>
+        <ul>
+            <li> <a href="#hours">Hours</a></li>
+            <li> <a href="#menu">Menu</a></li>
+            <li> <a href="#reservations">Reservations</a></li>
+            <li> <a href="#events">Events & Catering</a></li>
+        </ul>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

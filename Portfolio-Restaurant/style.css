@@ -1,0 +1,296 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+    color: wheat;
+}
+.logo-image{
+    background: url(images/restaurant/pexels-pixabay-260922.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+header a{
+    text-decoration: none;
+}
+header{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+    
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+    
+ul a{
+    color: black;
+    background-color: wheat;
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px 80px;
+}
+    
+ul li{
+    padding: 5px;
+    margin-left: 10px;
+    list-style-type: none;
+    padding-left: 5px;
+    display: flex;
+    display: inline;
+    justify-content: center;
+} 
+    
+ul li:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+h1{
+    padding-top: 0px;
+    margin: 90px 40px 0px;
+    color: wheat;
+    font-size: 150px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 8px;
+}
+h2{
+    text-align: center;
+    margin-top: 80px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#sectionOne{
+    margin-top: 400px;
+}
+#where{
+    display: inline;
+    display: flex;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+#where p{
+    width: 30%;
+    display: inline;
+    display: flex;
+    padding: 0px 20px 0px 70px;
+    font-family: 'Cormorant Garamond', serif;
+}
+#where iframe{
+    width: 70%;
+    display: inline;
+    display: flex;
+    padding-right: 70px;
+}
+#hours{
+    display: inline;
+    display: flex;
+    width: 100%;
+}
+#hours img{
+    width: 60%;
+    display: inline;
+    display: flex;
+    padding: 0px 130px 0px 0px;
+    margin-left: 30px;
+}
+div{
+    width: 20%;
+}
+#hours, #whereTitle, #whenTitle{
+    text-align: center;
+    padding: 40px;
+}
+#menu{
+    padding: 0px 70px 0px 70px;
+}
+#menu p{
+    padding-bottom: 20px;
+}
+span{
+    font-style: italic;
+}
+#hours p{
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+#reservations{
+    height: 170px;
+    background-color: wheat;
+    color: black;
+}
+#reservations h2{
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+
+#reservations p{
+    font-size: 80px;
+    text-align: center; 
+}
+
+#events{
+    height: 710px;
+    padding: 0px 70px 0px 70px;
+}
+input[type=text], textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px; 
+    resize: vertical;
+    font-family: 'Cormorant Garamond', serif;
+}
+input[type=submit]{
+    background-color: wheat;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Cormorant Garamond', serif;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    display: grid;
+    margin: auto;
+    width: 150px;
+  }
+input[type=submit]:hover{
+    background-color: whitesmoke;
+    font-family: 'Cormorant Garamond', serif;
+}
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+footer a{
+    text-decoration: none;
+}
+/* hamburger menu*/
+
+#hamburger-icon{
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+}
+
+#hamburger-icon div{
+    width: 35px;
+    height: 3px;
+    background-color: wheat;
+    margin: 6px 45px 6px;
+    transition: 0.4s;
+}
+
+#hamburger-icon section{
+    margin-top: 70px;
+}
+.open .bar1{
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2{
+    opacity: 0;
+}
+
+.open .bar3{
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.mobile-menu{
+    display: none;
+    position: absolute;
+    top: 120px;
+    left: 0px;
+    height: calc(100vh - 50px);
+    width: 100%;
+    height: 350px;
+    background-color: wheat;
+}
+
+.mobile-menu li{
+    padding-top: 45px;
+}
+
+@media only screen and (max-width: 600px){
+    header ul{
+        display: none;
+    }
+    #hamburger-icon{
+        display: block;
+    }
+    .logo-image{
+        display: none;
+    }
+    .logo-img{
+        background: url(images/restaurant/pexels-pixabay-260922.jpg) no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        width: auto;
+    }
+    h1{
+        margin: 0px 40px 0px 40px;
+    }
+    #sectionOne h2{
+        padding-top: 70px;
+    }
+    #where{
+        flex-direction: column;
+        align-items: center;
+    }
+    #where p{
+        width: 100%;
+        padding: 0px 20px 20px 65px;
+    }
+    #whenTitle{
+        padding: 40px 40px 0px 40px;
+    }
+    #where iframe{
+        padding: 0px;
+    }
+    #hours{
+        flex-direction: column;
+        align-items: center;
+    }
+    #hours img{
+        width: 100%;
+        padding: 0px 0px 10px 0px;
+        margin: 0px;
+    }
+    #hours p{
+        font-size: larger;
+        width: 100%;
+    }
+    #menu h2{
+        margin: 30px 0px 40px 0px;
+    }
+    #menu p{
+        margin-bottom: 20px;
+    }
+    #reservations{
+        height: 100%;
+    }
+    #reservations p{
+        font-size: 50px;
+    }
+    footer{
+        display: none;
+    }
+}
