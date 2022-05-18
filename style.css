@@ -3,6 +3,9 @@
     padding: 0;
     margin: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: black;
     color: wheat;
@@ -229,7 +232,7 @@ footer a{
     padding-top: 45px;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1060px){
     header ul{
         display: none;
     }
@@ -243,7 +246,7 @@ footer a{
         background: url(images/restaurant/pexels-pixabay-260922.jpg) no-repeat;
         background-size: cover;
         overflow: hidden;
-        width: auto;
+        width: 100%;
     }
     h1{
         margin: 0px 40px 0px 40px;
